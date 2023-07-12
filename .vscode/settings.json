@@ -1,9 +1,9 @@
 {
   "[python]": {
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "file"
+    "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "python.formatting.provider": "black",
   "python.formatting.blackArgs": [
       "--line-length=120",
       "--target-version=py310"
