@@ -7,5 +7,6 @@
   "python.formatting.blackArgs": [
       "--line-length=120",
       "--target-version=py310"
-  ]
+  ],
+  "appService.deploySubpath": "."
 }
