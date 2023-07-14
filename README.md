@@ -15,7 +15,6 @@ $ docker compose up
   - リポジトリを作成しておく (下記 Deploy セクションの 1. を参照)
 - App Service を作成する
   - ACR からデプロイするように設定しつつ作成する
-  - 「継続的デプロイ」を有効にする
 
 ### Deploy (with Azure CLI)
 #### 1. イメージをビルドして ACR にプッシュ
@@ -24,4 +23,4 @@ $ az acr build --registry ${ACR_REGISTRY_NAME} --image ${ACR_IMAGE_NAME} .
 ```
 
 #### 2. デプロイ
-App Service の設定が正しくできていれば、push した時点で自動でデプロイされるっぽい...？
+App Service 側の設定で「継続的デプロイ」が有効になっていれば、ACR に push した時点で自動でデプロイされるので特に操作は不要
