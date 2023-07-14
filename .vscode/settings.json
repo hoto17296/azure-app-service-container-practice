@@ -1,8 +1,13 @@
 {
-  "[python]": {
+  "[html][css][javascript][typescript][typescriptreact][json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "file",
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.formatOnSaveMode": "file"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
   },
   "python.formatting.blackArgs": [
       "--line-length=120",

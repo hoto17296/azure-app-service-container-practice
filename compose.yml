@@ -1,10 +1,27 @@
 services:
-  app:
-    build: .
+
+  reverse-proxy:
+    image: nginx:1.24
     volumes:
-      - .:/app
+      - ./reverse-proxy/nginx.conf:/etc/nginx/conf.d/default.conf
     ports:
-      - 8000:8000
+      - 8080:80
+    depends_on:
+      - frontend
+      - backend
+
+  frontend:
+    image: node:20
+    volumes:
+      - ./frontend:/app
+    init: true
+    working_dir: /app
+    command: sh -c 'npm install && npm run dev -- --host 0.0.0.0 --port 80'
+
+  backend:
+    build: backend
+    volumes:
+      - ./backend:/app
     init: true
     environment:
       DEBUG: 1
