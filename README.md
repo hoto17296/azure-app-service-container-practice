@@ -1,4 +1,5 @@
 # Azure App Service (Container) Practice
+単一コンテナの Web アプリを Azure App Service で動かしてみる練習
 
 ## Setup
 - 作業端末に Azure CLI をインストールしてログインする
