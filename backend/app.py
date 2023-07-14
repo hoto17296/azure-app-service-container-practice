@@ -14,4 +14,4 @@ async def api_root():
 # FastAPI 側で静的ファイルの配信も行う
 STATIC_FILES_DIR = getenv("STATIC_FILES_DIR")
 if STATIC_FILES_DIR:
-    app.mount("/", StaticFiles(directory=STATIC_FILES_DIR))
+    app.mount("/", StaticFiles(directory=STATIC_FILES_DIR, html=True))
