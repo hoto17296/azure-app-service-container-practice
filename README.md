@@ -1,4 +1,4 @@
-# Azure App Service (Python) Practice
+# Azure App Service (Container) Practice
 
 ## Setup
 - 作業端末に Azure CLI をインストールしてログインする
