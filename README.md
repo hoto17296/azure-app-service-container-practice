@@ -1,6 +1,8 @@
 # Azure App Service (Python) Practice
 
 ## Setup
+- 作業端末に Azure CLI をインストールしてログインする
+  - `az login`
 - Azure Container Registry でレジストリを作成する
   - 「アクセスキー」で「管理者ユーザー」を有効にする (しないと App Service からデプロイ出来ない)
 - App Service を作成する
