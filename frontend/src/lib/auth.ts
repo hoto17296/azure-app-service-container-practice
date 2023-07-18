@@ -43,3 +43,7 @@ export function getUserInfo(): UserInfo | undefined {
   }, [])
   return userInfo
 }
+
+export function signout() {
+  location.href = '/.auth/logout'
+}
