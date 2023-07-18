@@ -1,0 +1,83 @@
+[
+  {
+    "access_token": "dummyAccessToken",
+    "expires_on": "2033-07-01T00:00:00.0000000Z",
+    "id_token": "dummyIdToken",
+    "provider_name": "aad",
+    "user_claims": [
+      {
+        "typ": "aud",
+        "val": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "typ": "iss",
+        "val": "https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/v2.0"
+      },
+      {
+        "typ": "iat",
+        "val": "1234567890"
+      },
+      {
+        "typ": "nbf",
+        "val": "1234567890"
+      },
+      {
+        "typ": "exp",
+        "val": "1234567890"
+      },
+      {
+        "typ": "aio",
+        "val": "dummyAio"
+      },
+      {
+        "typ": "c_hash",
+        "val": "dummyCHash"
+      },
+      {
+        "typ": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress",
+        "val": "dummy@example.com"
+      },
+      {
+        "typ": "http://schemas.microsoft.com/identity/claims/identityprovider",
+        "val": "https://sts.windows.net/00000000-0000-0000-0000-000000000000/"
+      },
+      {
+        "typ": "name",
+        "val": "ダミー ユーザー"
+      },
+      {
+        "typ": "nonce",
+        "val": "dummy_nonce"
+      },
+      {
+        "typ": "http://schemas.microsoft.com/identity/claims/objectidentifier",
+        "val": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "typ": "preferred_username",
+        "val": "dummy@example.com"
+      },
+      {
+        "typ": "rh",
+        "val": "0.dummyRH."
+      },
+      {
+        "typ": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier",
+        "val": "dummyNameIdentifier"
+      },
+      {
+        "typ": "http://schemas.microsoft.com/identity/claims/tenantid",
+        "val": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "typ": "uti",
+        "val": "dummyUti"
+      },
+      {
+        "typ": "ver",
+        "val": "2.0"
+      }
+    ],
+    "user_id": "dummy@example.com"
+  }
+]
