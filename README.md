@@ -15,6 +15,7 @@ $ docker compose up
   - リポジトリを作成しておく (下記 Deploy セクションの 1. を参照)
 - App Service を作成する
   - ACR からデプロイするように設定しつつ作成する
+  - 作成後、メニューの「認証」から Azure AD 認証の設定を行う
 
 ### Deploy (with Azure CLI)
 #### 1. イメージをビルドして ACR にプッシュ
