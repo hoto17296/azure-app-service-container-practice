@@ -2,14 +2,14 @@
 単一コンテナの Web アプリを Azure App Service で動かしてみる練習
 
 ## 開発環境
-開発環境では Frontend と Backend を別コンテナで動かして Reverse Proxy する。(詳しくは [compose.yml] を参照)
+開発環境では Frontend と Backend を別コンテナで動かして Reverse Proxy する。(詳しくは [compose.yml](compose.yml) を参照)
 
 ```
 $ docker compose up
 ```
 
 ## 本番環境 (Azure App Service)
-本番環境では Frontend コードをビルドして Backend コンテナの中から静的配信する。(詳しくは [Dockerfile] を参照)
+本番環境では Frontend コードをビルドして Backend コンテナの中から静的配信する。(詳しくは [Dockerfile](Dockerfile) を参照)
 
 ### Setup
 - 作業端末に Azure CLI をインストールしてログインする
