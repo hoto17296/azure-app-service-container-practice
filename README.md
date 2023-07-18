@@ -16,6 +16,7 @@ $ docker compose up
 - App Service を作成する
   - ACR からデプロイするように設定しつつ作成する
   - 作成後、メニューの「認証」から Azure AD 認証の設定を行う
+    - 未認証の場合は HTTP 302 を返すように設定する
 
 ### Deploy (with Azure CLI)
 #### 1. イメージをビルドして ACR にプッシュ
