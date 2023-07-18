@@ -4,6 +4,20 @@
 ## 開発環境
 開発環境では Frontend と Backend を別コンテナで動かして Reverse Proxy する。(詳しくは [compose.yml](compose.yml) を参照)
 
+### Setup
+`compose.env.yml` ファイルを作成して必要な情報を記入する。
+
+``` yaml:compose.env.yml
+services:
+
+  backend:
+    environment:
+      AZURE_OPENAI_KEY: ...
+      AZURE_OPENAI_MODEL: ...
+      AZURE_OPENAI_RESOURCE: ...
+```
+
+### Start development
 ```
 $ docker compose up
 ```
