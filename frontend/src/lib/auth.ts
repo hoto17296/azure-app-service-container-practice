@@ -11,7 +11,8 @@ export interface UserInfo {
 }
 
 /**
- * ログイン中ユーザの情報を取得する Hooks
+ * Azure App Service の組み込み Azure AD 認証のトークンストアからログイン中ユーザの情報を取得する Hooks
+ * 参考： https://learn.microsoft.com/ja-jp/azure/app-service/configure-authentication-oauth-tokens
  */
 export function getUserInfo(): UserInfo | undefined {
   const [userInfo, setUserInfo] = useState<UserInfo>()
