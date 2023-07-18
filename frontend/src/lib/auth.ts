@@ -25,10 +25,15 @@ export function getUserInfo(): UserInfo | undefined {
         return setUserInfo(undefined)
       }
       if (!res.ok) throw new Error()
-      const body = (await res.json())[0] as AuthMeResponse
-      const userId = body.user_id
+      const body = (await res.json()) as AuthMeResponse[]
+      // TODO: ユーザ情報が空で返ってくるケースの処理を書く
+      // 不確定だが、セッション切れもしくはデプロイ後にこの現象が発生する模様
+      if (body.length === 0) {
+        throw new Error('user info is empty')
+      }
+      const userId = body[0].user_id
       const userClaims: { [typ: string]: string } = {}
-      body.user_claims.forEach((a) => (userClaims[a.typ] = a.val))
+      body[0].user_claims.forEach((a) => (userClaims[a.typ] = a.val))
       setUserInfo({
         userId: userId,
         name: userClaims.name,
