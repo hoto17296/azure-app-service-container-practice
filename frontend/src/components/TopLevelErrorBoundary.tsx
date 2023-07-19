@@ -1,5 +1,4 @@
 import { Component, ReactNode } from 'react'
-import { Alert, Button } from '@mui/material'
 import { signout } from '../lib/auth'
 
 export default class TopLevelErrorBoundary extends Component<
@@ -37,20 +36,13 @@ export default class TopLevelErrorBoundary extends Component<
     if (this.state.hasError) {
       return (
         <div style={{ padding: '1em' }}>
-          <Alert severity="error">
-            Sorry, an unexpected error has occurred.
-            <a href="#" onClick={() => location.reload()}>
-              Reload
-            </a>
-          </Alert>
-          <Button
-            variant="contained"
-            color="inherit"
-            style={{ marginTop: '1em' }}
-            onClick={signout}
-          >
+          Sorry, an unexpected error has occurred.
+          <a href="#" onClick={() => location.reload()}>
+            Reload
+          </a>
+          <a href="#" onClick={signout}>
             Signout
-          </Button>
+          </a>
         </div>
       )
     }
